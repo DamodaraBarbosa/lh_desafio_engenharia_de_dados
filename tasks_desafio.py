@@ -41,7 +41,7 @@ def export_final_answer():
 
 ## Do not change the code above this line-----------------------##
 
-def extract_from_northwind(**context):
+def extract_from_northwind():
     """
     Extrai a tabela Order do banco Northwind.
     """
@@ -51,7 +51,7 @@ def extract_from_northwind(**context):
     df_order.to_csv("/home/damodarabarbosa/airflow_tooltorial/data/output_orders.csv")
     conn.close()
 
-def export_count_file(**context):
+def export_count_file():
     """
     Extrai a tabela OrderDetail e faz o merge com a tabela Order. Por fim faz a contagem da 
     quantidade de produtos vendidos com destino ao Rio de Janeiro. A contagem é exportada no
